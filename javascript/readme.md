@@ -4,7 +4,7 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
 
 ## 📜 Topics Covered
 
-### 🌍 Scope
+### 1. 🌍 Scope
 - **Block Scope**: `{}`  
     Variables declared with `let` and `const` are block-scoped, meaning they are only accessible within the block they are defined in.
     ```bash
@@ -24,7 +24,7 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
     console.log(globalVariable); // ✅ Works anywhere!
     ```
 
-### ✨ IIFE (Immediately Invoked Function Expression):
+### 2. ✨ IIFE (Immediately Invoked Function Expression):
 
 
 IIFEs are functions that execute immediately after they are defined. They help to prevent global scope pollution by encapsulating variables.
@@ -37,7 +37,7 @@ IIFEs are functions that execute immediately after they are defined. They help t
     console.log(privateVariable); // ❌ ReferenceError
     ```
 
-### ⬆️ Hoisting
+### 3. ⬆️ Hoisting
 
 - **Functions**: Can be called even before they are defined.
 
