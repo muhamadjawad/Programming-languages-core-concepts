@@ -25,7 +25,7 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
     ```
 
 ### ✨ IIFE (Immediately Invoked Function Expression)
-
+-  
     IIFEs are functions that execute immediately after they are defined. They help to prevent global scope pollution by encapsulating variables.
 
     ```bash
