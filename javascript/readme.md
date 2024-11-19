@@ -25,7 +25,9 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
     ```
 
 ### ✨ IIFE (Immediately Invoked Function Expression)
+
     IIFEs are functions that execute immediately after they are defined. They help to prevent global scope pollution by encapsulating variables.
+
     ```bash
     (function() {
     let privateVariable = "I live in an IIFE!";
@@ -44,14 +46,15 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
         console.log("Hello, Hoisting!");
     }
     ```
--**Variables with var**: Declared variables are "hoisted" but not initialized.
+
+- **Variables with var**: Declared variables are "hoisted" but not initialized.
 
     ```bash
     console.log(a); // undefined
     var a = 5;
     ```
 
--**Variables with let or const**: Will throw a ReferenceError if accessed before declaration.
+- **Variables with let or const**: Will throw a ReferenceError if accessed before declaration.
 
     ```bash
     console.log(b); // ❌ ReferenceError
