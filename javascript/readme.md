@@ -24,9 +24,10 @@ Welcome to the **JavaScript Core Concepts** section! This is your go-to guide fo
     console.log(globalVariable); // ✅ Works anywhere!
     ```
 
-### ✨ IIFE (Immediately Invoked Function Expression)
--  
-    IIFEs are functions that execute immediately after they are defined. They help to prevent global scope pollution by encapsulating variables.
+### ✨ IIFE (Immediately Invoked Function Expression):
+
+
+IIFEs are functions that execute immediately after they are defined. They help to prevent global scope pollution by encapsulating variables.
 
     ```bash
     (function() {
