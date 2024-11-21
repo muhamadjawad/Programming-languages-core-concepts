@@ -165,7 +165,7 @@ In JavaScript, a **callback** is a function passed as a parameter to another fun
 
   ```bash
   async function fetchData() {
-  const data = await someAsyncFunction();
+  const data = await someAsyncFunction() ;
   console.log(data);
   }
   ```
