@@ -142,3 +142,30 @@ In JavaScript, a **callback** is a function passed as a parameter to another fun
     # Step 3: 3
     # Done: 4
     ```
+
+
+### 6. Promises, .then(), async/await
+
+- **Promises**  
+  A **Promise** is an object representing the eventual completion (or failure) of an asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected.
+
+- **.then()**  
+  The `.then()` method is used to handle the fulfillment (success) or rejection (failure) of a promise. It returns a new promise, enabling chaining.
+
+  ```bash
+  promise.then(result => {
+    console.log(result);  // Success
+  }).catch(error => {
+    console.error(error); // Error
+  });
+  ```
+
+- **.async/await**  
+  `async` defines a function that always returns a promise, and await pauses the execution of the function until the promise is resolved or rejected.
+
+  ```bash
+  async function fetchData() {
+  const data = await someAsyncFunction();
+  console.log(data);
+  }
+  ```
