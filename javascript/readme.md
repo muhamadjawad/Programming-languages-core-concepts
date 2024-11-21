@@ -108,10 +108,7 @@ In JavaScript, a **callback** is a function passed as a parameter to another fun
   # Data: Hello, World!
   ```
 
-## Callback Hell
-
-**Callback Hell** occurs when callbacks are nested inside other callbacks multiple times, leading to code that is difficult to read and maintain. This often happens in asynchronous operations where one operation depends on the result of the previous one.
-- 
+  - **Callback Hell** occurs when callbacks are nested inside other callbacks multiple times, leading to code that is difficult to read and maintain. This often happens in asynchronous operations where one operation depends on the result of the previous one.
 
     **Example of Callback Hell:**
     ```bash
