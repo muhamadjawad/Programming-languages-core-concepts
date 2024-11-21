@@ -61,3 +61,28 @@ IIFEs are functions that execute immediately after they are defined. They help t
     console.log(b); // ❌ ReferenceError
     let b = 10;
     ```
+
+### 4. Closures
+
+A **closure** is a function inside another function that has access to the outer function's variables. Closures have three scope chains:
+
+  1. Access to their own scope (variables defined within their curly brackets).
+  2. Access to the outer function's variables.
+  3. Access to global variables.
+
+    **Example:**
+    ```bash
+    function outerFunction(outerVariable) {
+    return function innerFunction(innerVariable) {
+        console.log(`Outer Variable: ${outerVariable}`);
+        console.log(`Inner Variable: ${innerVariable}`);
+    };
+    }
+
+
+    const newFunction = outerFunction("Outer");
+    newFunction("Inner");
+    // Output:
+    // Outer Variable: Outer
+    // Inner Variable: Inner
+    ```
