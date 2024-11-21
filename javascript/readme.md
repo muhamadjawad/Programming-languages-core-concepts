@@ -80,10 +80,68 @@ A **closure** is a function inside another function that has access to the outer
     };
     }
 
-
     const newFunction = outerFunction("Outer");
     newFunction("Inner");
     // Output:
     // Outer Variable: Outer
     // Inner Variable: Inner
+    ```
+
+### 5. Callbacks
+
+In JavaScript, a **callback** is a function passed as a parameter to another function. It allows functions to call another function once an operation is completed.
+    
+  **Example:**
+  ```bash
+  function processData(data, callback) {
+  console.log("Processing data...");
+  callback(data);
+  }
+
+  function printData(data) {
+  console.log(`Data: ${data}`);
+  }
+
+  processData("Hello, World!", printData);
+  # Output:
+  # Processing data...
+  # Data: Hello, World!
+  ```
+
+## Callback Hell
+
+**Callback Hell** occurs when callbacks are nested inside other callbacks multiple times, leading to code that is difficult to read and maintain. This often happens in asynchronous operations where one operation depends on the result of the previous one.
+- 
+
+    **Example of Callback Hell:**
+    ```bash
+    function step1(data, callback) {
+    console.log("Step 1:", data);
+    callback(data + 1);
+    }
+
+    function step2(data, callback) {
+    console.log("Step 2:", data);
+    callback(data + 1);
+    }
+
+    function step3(data, callback) {
+    console.log("Step 3:", data);
+    callback(data + 1);
+    }
+
+    # Nested callbacks causing "callback hell"
+    step1(1, (data) => {
+    step2(data, (data) => {
+        step3(data, (data) => {
+        console.log("Done:", data);
+        });
+    });
+    });
+
+    # Output:
+    # Step 1: 1
+    # Step 2: 2
+    # Step 3: 3
+    # Done: 4
     ```
