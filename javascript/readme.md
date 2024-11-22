@@ -173,23 +173,23 @@ In JavaScript, a **callback** is a function passed as a parameter to another fun
 
 ### 7. Currying
 
-**Currying** is a technique of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument. It helps in creating reusable and modular code.
+  **Currying** is a technique of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument. It helps in creating reusable and modular code.
 
-    ```bash
-    // A normal function
-    function multiply(a, b) {
-    return a * b;
-    }
+  ```bash
+  // A normal function
+  function multiply(a, b) {
+  return a * b;
+  }
 
-    // Curried version
-    function curriedMultiply(a) {
-    return function (b) {
-        return a * b;
-    };
-    }
+  // Curried version
+  function curriedMultiply(a) {
+  return function (b) {
+      return a * b;
+  };
+  }
 
-    // Usage
-    const multiplyBy2 = curriedMultiply(2);
-    console.log(multiplyBy2(5)); // Output: 10
-    console.log(curriedMultiply(3)(4)); // Output: 12
-    ```
+  // Usage
+  const multiplyBy2 = curriedMultiply(2);
+  console.log(multiplyBy2(5)); // Output: 10
+  console.log(curriedMultiply(3)(4)); // Output: 12
+  ```
